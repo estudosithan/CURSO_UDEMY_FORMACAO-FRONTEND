@@ -1,0 +1,653 @@
+/* 4 - External */
+/*ISSO É UM COMENTÁRIO*/
+
+body{
+    padding-bottom: 0.4px; /* scroll do mouse*/
+}
+h3{
+    color: purple; /*cor do h3*/
+}
+ul{
+    border: 5px solid blue; /*borda da lista*/
+    padding-left: 30px; /* distanciamento do escrito até a borda*/
+}
+li{
+    color: darkblue; /*cor da lista*/
+}
+
+/*Classes*/
+/*Utilizadas para customizar um conjunto de elementos distintos*/
+.paragrafo {
+    background-color: #000;
+    color: green;
+    font-size: 40px;
+}
+
+
+.div_geral{
+    height: 400px; /*Altura*/
+    width: 400px; /*Largura*/
+    border: 20px solid #000;
+}
+
+/*ID*/
+#exclusive-title{
+    background-color: purple;
+    color: orangered;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/*NOME DE COR*/
+.teste_de_cor{
+   color:rgb(96, 48, 145); 
+}
+
+.div_estilosa{
+    border: 20px solid rgb(65, 65, 159);
+    padding-left: 20px;
+    background-color: rgba(250, 1, 1, 0.4);
+    height: 400px;
+    width: 400px;
+}
+
+.hex{
+    color: #55a398;
+    font-size: 30px;
+}
+
+.rgba{ /*Para fazer, é necessário escrever rgba na frente do parêntesis*/
+    font-size: 30px;
+    color: rgba(122, 73, 20, 0.5);
+    
+}
+ 
+.hsl{ /*Para fazer, é necessário escrever como o rgba,a diferença mora na porcentagem*/
+    font-size: 30px;
+    color: hsl(202,20%,50%);
+}
+
+/*Background Opacity*/ /*Tudo feito aqui da para fazer com um simples rgba no background*/
+.bg-opacity{
+    background-color: #55a398;
+    opacity: 0.70;
+    color: orange;
+    font-size: 30px;
+}
+
+/*BACKGROUND-IMAGE (PARA INSERIR IMAGEM NO FUNDO)*/
+.imagem_no_fundo{ /*Para usar com imagens em outra pasta, basta colocar "../" para "voltar no diretório e achar a pasta */
+    background-image: url("../HTML/assets/flor.jpg");
+    font-size: 30px;
+}
+
+
+/*Centralizando Imagem Background*/
+.imagem_centralizada{ /*Para adaptar a div que contém a imagem*/
+    height: 400px;
+    width: 400px;
+    background-image: url(../HTML/assets/flor.jpg);
+}
+
+.imagem_centralizada{ /*Para centralizar a imagem*/
+ 
+    background-size: cover; /*Para por o máximo da imagem no campo*/
+    
+}
+
+
+/*BOX MODEL*/
+
+.box_model{ /*Apenas testando as distÂncias da box*/
+    border: 20px solid #000;
+    height: 300px; /*Altura*/
+    width: 400px; /*Largura*/
+    padding: 20px;/*Distância entre a letra e a borda*/
+    color: purple;
+}
+
+/*PADDING TIPOS*/
+.padding_tipos{
+    padding-left: 100px; /*Distância da margem esquerda*/
+    padding-top: 150px; /*Distância do topo da página*/
+    padding-bottom: 100px; /*Distância entre a letra e a borda inferior*/
+    padding-right: 100px; /*Distância da margem direita da página*/
+}
+/*Shorthand-padding
+padding: 150px 100px  100px 100px; (top,right,bottom,left (respectivamente)) (outra maneira de fazer o padding)
+OU
+padding: 10px 20px (cima,baixo) , (direita e esquerda)
+/*
+
+/*BORDER BOX*/
+.border_box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 150px;
+    box-sizing: border-box; /*Para que o elemento não saia da escala devido ao padding, ou seja, não deixa o padding mudar o tamanho da caixa criada pela div*/
+}
+
+
+/*BORDA*/
+.borda{
+    border: 20px solid red; /*Para linha sólida*/
+    border: 20px dotted red; /*Para linha pontilhada*/
+    border: 20px double red; /*Para borda dupla*/
+}
+
+.borda_individual{
+    border-left: 3px solid green ; /*Borda Esquerda*/
+    border-right: 10px dotted green; /*Borda Direita*/
+    border-bottom:5px double green; /*Borda Inferior*/
+    border-top: 10px double green;  /*Borda de Cima*/
+}
+
+.arredondamento_de_borda{
+    border: 4px solid blue; /*Só para aparecer a borda*/
+    border-radius: 5px;
+    padding: 10px; /*Para desgrudar a letra da borda*/
+
+}
+
+/*MARGEM*/
+.margin{
+  margin: 10px; /*Margem geral*/
+  margin-top: 20px; /*Distância até a margin-botton (margem inferior) do elemento a cima*/
+  margin-bottom: 20px ;/*Distância até a margin-top (margem superior) do outro elemento*/
+}
+
+/*TODAS PROPRIEDADES BOX MODEL*/
+.propriedades_totais_Box_Model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 10px solid #845;
+    border-radius: 5px;
+}
+
+/*TEXTO ALINHADO*/
+.alinhamento{
+    text-align: center; /*Centro*/
+   
+}
+/*DIV ELEMENTOS TODOS ALINHADOS*/
+.container_center{
+    text-align: center; /*Para centralizar elementos dentro da DIV, não a DIV em sí*/
+    width: 300px;
+    border: 10px solid blue;
+    border-radius: 5px;
+}
+
+.underline{
+    text-decoration: none; /*Para tirar todas as decorações do texto*/
+    text-decoration: underline; /*Para por underline no texto*/
+    text-transform: lowercase; /*Para deixar tudo minúsculo*/
+    text-transform: uppercase; /*Para deixar tudo maiúsculo*/
+    letter-spacing: 5px; /*Para espaçamento de letra*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Adicionar novas fontes*/
+    font-style: italic; /*Para dar estilo as fontes (itálico, normal(default) ou oblicuo)*/
+    font-weight: 900; /*Para "engrossar" a fonte do texto*/
+}
+
+.display{
+    text-transform: uppercase;
+    color: darkslategrey; 
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: none; /*Para ocultar na tela um elemento*/
+    display: inline-block; /* Para por um bloco do lado do outro na horizontal*/
+}
+
+.static{
+    position:static; /*Static não serve para nada, mantem a posição no mesmo lugar*/
+    color: white; 
+    width: 150px;
+    height: 150px;
+    background-color: rgb(7, 45, 21);
+    box-sizing: border-box;
+    padding: 60px 60px;
+}
+
+.relative{
+    position: relative; /*Não é muito usual*/
+    top: 500px; /*Distância que a div ele toma do topo*/
+    left: 40px; /*Distância que  a div toma da esquerda*/
+    text-align: center;
+    color: white; 
+    width: 150px;
+    height: 150px;
+    background-color: rgb(68, 24, 24);
+    box-sizing: border-box;
+    padding: 60px 60px;
+}
+.absolute{
+    /*Quebra o fluxo html*/
+
+    position: absolute;
+    top: 10000px; /*Distância que a div ele toma do topo*/
+    right: 1px; /*Distância que  a div toma da esquerda*/
+    text-align: center;
+    color: white; 
+    width: 150px;
+    height: 150px;
+    background-color: rgb(68, 24, 24);
+    box-sizing: border-box;
+    padding: 60px 60px;
+}
+
+/*Estlização de Botão*/
+button{
+    width: 110px;
+    height: 70px;
+    border-radius: 10px;
+    background-color:rgb(242, 35, 90);
+    border: 6px solid rgb(225, 225, 246);
+    text-decoration: none;
+}
+/*Transição de Botão*/
+button:hover{
+    width: 110px;
+    height: 70px;
+    border-radius: 10px;
+    background-color:rgb(247, 252, 251);
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    border: 6px solid #000;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+   
+}
+
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 1px solid blueviolet;
+    position: fixed;
+    top: 50px; /*Para o elemento aparecer */
+    right: 100px; /*Para o elemento aparecer */
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.sticky{
+    /*Tal qual fixed, mas o elemento volta a sua posição original depois*/
+    width: 100px;
+    height: 100px;
+    background-color: rgb(24, 90, 118);
+    border: 1px solid blueviolet;
+    position: sticky;
+    top: 50px; /*Para o elemento aparecer */
+    left: 100px; /*Para o elemento aparecer */
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.formulario{
+    width: 370px;
+    height: 550px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+   padding-left: 8px;
+    border: 10px solid darkblue;
+    position: relative; 
+    top: 50px; 
+    left: 300px;
+    box-sizing: border-box;
+}
+.conteudo_formulario{
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+.input{
+    height: 17px;
+}
+
+.select{
+    height:20px;
+}
+
+.formulario_2{
+    width: 500px;
+    height: 400px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 10px solid darkorange;
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.fieldset{
+    width: 600px;
+    height: 400px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border: 10px solid darkseagreen;
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    
+}
+
+.fieldset_1{
+    width: 400px;
+    height: 150px;
+    display: block;
+}
+
+.datalist{
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    border: 10px solid red;
+    padding-top: 50px;
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+}
+
+
+.senha{
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    border: 10px solid red;
+    padding-top: 50px;
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+}
+
+input,label{
+    display: block;
+    
+}
+
+input{
+    border-radius: 7px;
+    height: 30px;
+}
+
+.botao_2{
+    font-size: medium;
+    color: whitesmoke;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:black;
+    border: 6px solid rgb(225, 225, 246);
+    
+}
+
+.botaozin{
+    padding-left: 70px;
+    display: inline-block;
+}
+
+.botao_2:hover{
+    font-size: medium;
+    color: black;
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:rgb(247, 252, 251);
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    border: 6px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+    
+}
+
+
+.senha_2{
+    height: 15px;
+}
+
+
+.botao_limpar{
+    font-size: medium;
+    color: whitesmoke;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:black;
+    border: 6px solid rgb(225, 225, 246);
+}
+
+
+.botao_limpar:hover{
+    font-size: medium;
+    color: black;
+    width: 90px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:rgb(247, 252, 251);
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor */
+    border: 6px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
+    
+}
+
+.modelo_carro{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.radio label, .radio input, .radio span{
+    display: inline-block;
+}
+
+.data{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.aniversario{
+    height: 30px;
+}
+
+.arquivos{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.envio_arquivo{
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.numeros{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.email{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.email_estilo{
+    width: 200px;
+}
+
+
+.disabled{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.placeholder{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid palevioletred;
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+.required{
+    position: relative; 
+    top: 70px; 
+    left: 300px;
+    margin: 10px;
+    border: 10px solid rgb(119, 216, 112);
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

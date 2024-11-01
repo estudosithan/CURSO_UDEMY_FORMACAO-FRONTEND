@@ -1,0 +1,14 @@
+#desafio2{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 10px solid #845;
+    border-radius: 5px;
+    outline: 5px solid #952; /*Borda extra após a margem*/
+    background-color: darkcyan;
+}
+.texto{
+    color: green;
+    font-size: medium;
+    background-color: antiquewhite;
+   
+}
